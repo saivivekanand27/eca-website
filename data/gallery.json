@@ -1,0 +1,5 @@
+[
+  { "title": "ECA Open Session 2026", "slug": "open-session", "image": "/gallery/open-session/cover.jpg", "date": "Jan 2026" },
+  { "title": "Quantum Computing Session", "slug": "dsa-bootcamp", "image": "/gallery/dsa-bootcamp/cover.jpg", "date": "Feb 2026" },
+  { "title": "Open Session 2025", "slug": "hackathon", "image": "/gallery/hackathon/cover.jpg", "date": "May 2025" }
+]

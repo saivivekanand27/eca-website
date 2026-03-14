@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Introduction to CP",
+    "date": "March 2026",
+    "location": "Online",
+    "description": "An introduction to Competitive Programming session and opportunities for students.",
+    "image": "/events/event1.jpg",
+    "type": "upcoming"
+  },
+  {
+    "title": "DSA Bootcamp",
+    "date": "August 2026",
+    "location": "CSE Seminar Hall",
+    "description": "A complete training program on Data Structures and Algorithms.",
+    "image": "/events/event2.jpg",
+    "type": "upcoming"
+  },
+  {
+    "title": "Coding Contest",
+    "date": "September 2026",
+    "location": "Online",
+    "description": "A competitive programming contest designed to challenge algorithmic thinking.",
+    "image": "/events/event3.jpg",
+    "type": "upcoming"
+  },
+  {
+    "title": "ECA Open Session",
+    "date": "March 2026",
+    "location": "SNIST Auditorium",
+    "description": "An introduction to ECA, competitive programming and opportunities for students.",
+    "image": "/events/event1.jpg",
+    "type": "past"
+  },
+  {
+    "title": "GeekWeek 4 stages",
+    "date": "December 2025",
+    "location": "Online",
+    "description": "Conducted 4 stages of coding competitions GeekWeek",
+    "image": "/events/event5.jpg",
+    "type": "past"
+  },
+  {
+    "title": "FrontEnd BootCamp",
+    "date": "May 2025",
+    "location": "Online",
+    "description": "An introduction to Frontend development and basic idea on Git and GitHub",
+    "image": "/events/event1.jpg",
+    "type": "past"
+  },
+  {
+    "title": "Quantum Computing session",
+    "date": "October 2025",
+    "location": "SNIST Auditorium",
+    "description": "An introduction to Quantum Programming, diving into the world of quantum computing.",
+    "image": "/events/event1.jpg",
+    "type": "past"
+  }
+]

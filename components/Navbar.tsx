@@ -17,21 +17,19 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
     { name: "Team", href: "/team" },
     { name: "Events", href: "/events" },
     { name: "Gallery", href: "/gallery" },
   ];
 
   const icpcLinks = [
-    { name: "About ICPC", href: "/icpc" },
-    { name: "Training", href: "/icpc/training" },
-    { name: "Teams", href: "/icpc/teams" },
+    { name: "What is it?", href: "/icpc" },
+    { name: "Training & Practice", href: "/icpc/training" },
   ];
 
   return (
     <nav className="sticky top-0 z-50 backdrop-blur-2xl bg-white/70 dark:bg-black/50 border-b border-gray-200 dark:border-white/10 transition-colors duration-300">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <div className="w-full mx-auto flex items-center justify-between px-6 md:px-12 lg:px-20 xl:px-32 py-4">
 
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group">
@@ -40,7 +38,7 @@ export default function Navbar() {
             alt="ECA Logo"
             className="w-10 h-10 rounded-full object-cover border border-gray-200 dark:border-white/20 group-hover:scale-110 transition duration-300"
           />
-          <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 bg-clip-text text-transparent tracking-wide">
+          <span className="text-xl font-serif italic font-bold text-slate-800 dark:text-slate-200 tracking-wide">
             ECA
           </span>
         </Link>
@@ -102,7 +100,7 @@ export default function Navbar() {
           </div>
 
           <Link href="/contact" className="relative hover:text-black dark:hover:text-white transition group">
-            Contact
+            Connect
             <motion.span 
               className="absolute left-0 -bottom-1 h-[2px] bg-blue-500 rounded-full"
               initial={{ width: "0%" }}

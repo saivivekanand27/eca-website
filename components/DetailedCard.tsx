@@ -17,14 +17,14 @@ export default function DetailedCard({ icon, title, description, tooltipText }: 
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className="relative group border border-gray-200 dark:border-gray-800 p-8 rounded-2xl bg-white dark:bg-gray-900/50 shadow-sm hover:shadow-xl dark:hover:shadow-blue-900/20 hover:-translate-y-1 transition-all duration-300"
+      className="relative group border border-gray-200 dark:border-gray-800 p-8 rounded-2xl bg-white dark:bg-[#0a0a0a] shadow-sm hover:shadow-xl dark:shadow-none hover:border-gray-300 dark:hover:border-gray-600 hover:-translate-y-1 transition-all duration-300"
     >
       <div className="flex justify-between items-start mb-6">
-        {icon && <div className="text-blue-600 dark:text-blue-400 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-2xl">{icon}</div>}
+        {icon && <div className="text-gray-900 dark:text-gray-100 p-4 bg-gray-100 dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700">{icon}</div>}
         
         {/* Tooltip trigger icon */}
         {tooltipText && (
-          <div className="relative cursor-help text-gray-400 dark:text-gray-500 hover:text-blue-500 dark:hover:text-blue-400 transition-colors pt-2">
+          <div className="relative cursor-help text-gray-400 dark:text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 transition-colors pt-2">
             <Info size={22} />
             
             {/* Tooltip itself */}

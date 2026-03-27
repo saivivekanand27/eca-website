@@ -130,13 +130,15 @@ export default function Navbar() {
           </button>
 
           {/* Join Button */}
-          <motion.button 
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="bg-gray-900 text-white dark:bg-white dark:text-black px-6 py-2.5 rounded-full shadow-lg font-bold hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors ml-2"
-          >
-            Join ECA
-          </motion.button>
+          <Link href="/join">
+            <motion.button 
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-gray-900 text-white dark:bg-white dark:text-black px-6 py-2.5 rounded-full shadow-lg font-bold hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors ml-2"
+            >
+              Join ECA
+            </motion.button>
+          </Link>
 
         </div>
 
@@ -229,9 +231,11 @@ export default function Navbar() {
                 Contact
               </Link>
 
-              <button className="mt-6 bg-gray-900 text-white dark:bg-white dark:text-black px-5 py-3 rounded-xl font-bold w-full hover:opacity-90 transition shadow-lg">
-                Join ECA
-              </button>
+              <Link href="/join" onClick={() => setMenuOpen(false)}>
+                <button className="mt-6 bg-gray-900 text-white dark:bg-white dark:text-black px-5 py-3 rounded-xl font-bold w-full hover:opacity-90 transition shadow-lg">
+                  Join ECA
+                </button>
+              </Link>
             </div>
           </motion.div>
         )}

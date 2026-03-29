@@ -1,12 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { FaLinkedin, FaInstagram, FaDiscord, FaWhatsapp } from "react-icons/fa";
 import { ArrowUpRight, Mail } from "lucide-react";
 
 export default function ContactHub() {
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     show: {
       opacity: 1,
@@ -14,7 +14,7 @@ export default function ContactHub() {
     },
   };
 
-  const itemVariants: any = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, y: 30 },
     show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
   };
@@ -106,12 +106,16 @@ export default function ContactHub() {
               <div className={`w-16 h-16 flex items-center justify-center bg-white dark:bg-black rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 ${social.textClass} group-hover:scale-110 transition-transform duration-500`}>
                 {social.icon}
               </div>
+
               <div className="w-12 h-12 rounded-full bg-white dark:bg-gray-800 text-gray-400 dark:text-gray-500 flex items-center justify-center group-hover:bg-white group-hover:text-black dark:group-hover:text-white transition-colors shadow-sm">
                 <ArrowUpRight size={24} className="transform group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
               </div>
             </div>
 
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-3 relative z-10">{social.name}</h2>
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-3 relative z-10">
+              {social.name}
+            </h2>
+
             <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed relative z-10">
               {social.description}
             </p>
@@ -119,7 +123,7 @@ export default function ContactHub() {
         ))}
       </motion.div>
 
-      {/* Official Email Contact */}
+      {/* Official Email */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -131,12 +135,21 @@ export default function ContactHub() {
           <div className="w-16 h-16 rounded-full bg-white/10 dark:bg-black/5 flex items-center justify-center flex-shrink-0">
             <Mail className="text-white dark:text-gray-900" size={28} />
           </div>
+
           <div>
-            <h3 className="text-2xl font-bold text-white dark:text-gray-900 mb-1">Official Inquiries</h3>
-            <p className="text-gray-400 dark:text-gray-600">Reach out to the executive board directly.</p>
+            <h3 className="text-2xl font-bold text-white dark:text-gray-900 mb-1">
+              Official Inquiries
+            </h3>
+            <p className="text-gray-400 dark:text-gray-600">
+              Reach out to the executive board directly.
+            </p>
           </div>
         </div>
-        <a href="mailto:contact@eca.edu" className="px-8 py-4 bg-white dark:bg-gray-900 text-gray-900 dark:text-white font-bold rounded-full hover:scale-105 active:scale-95 transition-all w-full sm:w-auto text-center shadow-lg">
+
+        <a
+          href="mailto:contact@eca.edu"
+          className="px-8 py-4 bg-white dark:bg-gray-900 text-gray-900 dark:text-white font-bold rounded-full hover:scale-105 active:scale-95 transition-all w-full sm:w-auto text-center shadow-lg"
+        >
           contact@eca.edu
         </a>
       </motion.div>

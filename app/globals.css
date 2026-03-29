@@ -10,3 +10,21 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+.glass-card{
+  padding:2rem;
+  border-radius:1.5rem;
+  background: rgba(255,255,255,0.55);
+  backdrop-filter: blur(14px);
+  border:1px solid rgba(255,255,255,0.3);
+  transition: all .3s ease;
+}
+
+.dark .glass-card{
+  background: rgba(20,20,20,0.6);
+  border:1px solid rgba(255,255,255,0.05);
+}
+
+.glass-card:hover{
+  transform: translateY(-4px);
+  box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}

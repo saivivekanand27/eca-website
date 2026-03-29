@@ -1,28 +1,28 @@
 {
   "executive": [
     {
-      "name": "K.Ratnakar",
+      "name": "K Ratnakar",
       "role": "President",
       "image": "/team/member1.jpeg",
       "linkedin": "https://linkedin.com",
       "github": "https://github.com"
     },
     {
-      "name": "N.Vivek",
+      "name": "N Vivek",
       "role": "Vice President",
       "image": "/team/member2.jpeg",
       "linkedin": "https://linkedin.com",
       "github": "https://github.com"
     },
     {
-      "name": "Bhavitha",
+      "name": "A Bhavitha",
       "role": "General Secretary",
       "image": "/team/Bhavitha.jpg",
       "linkedin": "https://linkedin.com",
       "github": "https://github.com"
     },
     {
-      "name": "Charan Reddy",
+      "name": "P Charan Reddy",
       "role": "Technical Lead",
       "image": "/team/charan.jpeg",
       "linkedin": "https://linkedin.com",
@@ -126,7 +126,7 @@
     {
       "name": "Sanhith",
       "role": "Publicity Team",
-      "image": "/team/member12.jpg",
+      "image": "",
       "linkedin": "https://linkedin.com",
       "github": "https://github.com"
     },
@@ -147,7 +147,7 @@
     {
       "name": "Rishik",
       "role": "Designing Team",
-      "image": "/team/member14.jpg",
+      "image": "",
       "linkedin": "https://linkedin.com",
       "github": "https://github.com"
     },
